@@ -38,12 +38,40 @@ const Header = () => {
         </h3>
       </div>
       <div className="flex gap-8 mt-5 z-50">
-        <FaGithub size={30} className="text-gray-700 hover:text-gray-900" />
-        <FaLinkedin size={30} className="text-gray-700 hover:text-gray-900" />
+        <a href="https://github.com/kamranalig" target="_blank">
+          <FaGithub size={30} className="text-gray-700 hover:text-gray-900" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kamran-ali-2318b0207/"
+          target="_blank"
+        >
+          <FaLinkedin size={30} className="text-gray-700 hover:text-gray-900" />
+        </a>
+        <a
+          href="https://wa.me/+923095543952"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp size={30} className="text-gray-700 hover:text-gray-900" />
+        </a>
+        <a
+          href="https://instagram.com/kamranali3573"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram
+            size={30}
+            className="text-gray-700 hover:text-gray-900"
+          />
+        </a>
         <FaTwitter size={30} className="text-gray-700 hover:text-gray-900" />
-        <FaWhatsapp size={30} className="text-gray-700 hover:text-gray-900" />
-        <FaFacebook size={30} className="text-gray-700 hover:text-gray-900" />
-        <FaInstagram size={30} className="text-gray-700 hover:text-gray-900" />
+        <a
+          href="https://www.facebook.com/profile.php?id=100081274886195&mibextid=ZbWKwL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook size={30} className="text-gray-700 hover:text-gray-900" />
+        </a>
       </div>
     </div>
   );
