@@ -1,5 +1,8 @@
 import React from "react";
-import { FaDesktop, FaServer, FaPaintBrush } from "react-icons/fa";
+import { FaDesktop, FaServer, FaPaintBrush, FaRegUser } from "react-icons/fa";
+import { SlFire, SlBadge } from "react-icons/sl";
+import { BiCoffee } from "react-icons/bi";
+
 import "./Services.css";
 
 const Services = () => {
@@ -46,6 +49,44 @@ const Services = () => {
               experience. From wireframing to prototyping, I create designs that
               blend aesthetics with functionality to achieve your business
               goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between py-14">
+        <div className="flex items-center gap-5">
+          <SlFire className=" text-4xl text-[#3B82F6]" />
+          <div>
+            <h4 className=" text-3xl font-bold text-[#454360]">10+</h4>
+            <p className=" text-lg tracking-widest text-[#454360]">
+              Projects completed
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-5">
+          <BiCoffee className=" text-5xl text-[#FF4C60]" />
+          <div>
+            <h4 className=" text-3xl font-bold text-[#454360]">950</h4>
+            <p className=" text-lg text-[#454360] tracking-widest">
+              Cup of coffee
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-5">
+          <FaRegUser className=" text-4xl text-[#3B82F6]" />
+          <div>
+            <h4 className=" text-3xl font-bold text-[#454360]">7</h4>
+            <p className=" text-lg text-[#454360] tracking-widest">
+              Satisfied clients
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-5">
+          <SlBadge className=" text-4xl text-[#FF4C60]" />
+          <div>
+            <h4 className=" text-3xl font-bold text-[#454360]">1500+</h4>
+            <p className=" text-lg text-[#454360] tracking-widest">
+              Commits Pushed
             </p>
           </div>
         </div>
