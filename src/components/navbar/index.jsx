@@ -7,8 +7,12 @@ const Navbar = () => {
         Kamran Ali
       </div>
       <div className="flex gap-4 font-semibold text-black">
-        <h4 className="hover:text-blue-500 cursor-pointer">Home</h4>
-        <h4 className="hover:text-blue-500 cursor-pointer">About</h4>
+        <a className="hover:text-blue-500 cursor-pointer" href="#home">
+          Home
+        </a>
+        <a className="hover:text-blue-500 cursor-pointer" href="#about">
+          About
+        </a>
         <h4 className="hover:text-blue-500 cursor-pointer">Services</h4>
         <h4 className="hover:text-blue-500 cursor-pointer">Experience</h4>
         <h4 className="hover:text-blue-500 cursor-pointer">Work</h4>
