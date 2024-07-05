@@ -1,8 +1,9 @@
 import React from "react";
+import Skills from "../skills";
 
 const About = () => {
   return (
-    <div className="max-w-[1160px] mx-auto my-[70px] px-4" id="about">
+    <div className="max-w-[1160px] mx-auto my-[70px]" id="about">
       <div className="flex flex-col lg:flex-row w-full gap-2 justify-center items-center">
         <div className="w-full lg:w-1/2 text-center lg:text-right mb-8 lg:mb-0">
           <img
@@ -40,6 +41,7 @@ const About = () => {
           </a>
         </div>
       </div>
+      <Skills />
     </div>
   );
 };
