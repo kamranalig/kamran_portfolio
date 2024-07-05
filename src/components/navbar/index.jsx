@@ -28,7 +28,16 @@ const Navbar = () => {
         >
           About
         </Link>
-        {/* Add other links similarly */}
+        <Link
+          to="services"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active-link"
+          className="cursor-pointer hover:text-blue-500"
+        >
+          Services
+        </Link>
       </div>
     </div>
   );
