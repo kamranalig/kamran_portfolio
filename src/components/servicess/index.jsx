@@ -5,9 +5,7 @@ import "./Services.css";
 const Services = () => {
   return (
     <div className="max-w-[1160px] mx-auto py-10" id="services">
-      <h3 className="text-3xl font-bold mb-8 text-center">
-        My Offered Services
-      </h3>
+      <h3 className="text-3xl font-bold mb-8">My Offered Services</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="service-card bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
           <div>
