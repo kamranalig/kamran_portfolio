@@ -2,10 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-[1160px] mx-auto py-16 px-4" id="about">
-      <h2 className="text-4xl font-bold text-center mb-12 text-black">
+    <div className="max-w-[1160px] mx-auto my-[70px] px-4" id="about">
+      <span className="text-4xl font-bold text-black border-b-4 border-solid border-[#3B82F6]">
         About Me
-      </h2>
+      </span>
+
       <div className="flex flex-col lg:flex-row w-full gap-2 justify-center items-center">
         <div className="w-full lg:w-1/2 text-center lg:text-right mb-8 lg:mb-0">
           <img
