@@ -27,7 +27,7 @@ const Services = () => {
         </div>
         <div className="service-card bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
           <div>
-            <FaServer size={40} className="text-blue-500 mb-4 mx-auto" />
+            <FaServer size={40} className="text-[#FF4C60] mb-4 mx-auto" />
             <h4 className="text-xl font-semibold mb-4 text-center">
               Backend Development
             </h4>

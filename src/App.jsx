@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/about";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Navbar from "./components/navbar/index";
 import Services from "./components/servicess";
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <About />
       <Services />
+      <Footer />
     </>
   );
 }
