@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="max-w-[1160px] mx-auto py-14 px-4" id="projects">
+    <div className="max-w-[1160px] mx-auto px-4" id="projects">
       <h3 className="text-3xl font-bold mb-8 text-[#454360]">
         My Recent Projects
       </h3>
