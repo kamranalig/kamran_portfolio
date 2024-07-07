@@ -1,83 +1,68 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaWhatsapp,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa";
+import Typewriter from "typewriter-effect";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-import "./Header.css";
-
-const Header = () => {
+const Hero = () => {
   return (
     <div
-      className="header-container h-[80vh] flex flex-col justify-center items-center relative"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-blue-900 text-white"
       id="home"
     >
-      <div className="bg-white bg-opacity-80 p-10 rounded-lg text-center shadow-lg relative z-10">
-        <h4 className="text-2xl font-bold pb-5 tracking-widest text-black">
-          Welcome
-        </h4>
-        <h3 className="text-4xl sm:text-6xl font-semibold text-black">
-          I'm a
-          <span className="text-blue-500">
-            <Typewriter
-              words={[
-                " Front-End Developer",
-                " Backend Developer",
-                " MERN Stack Developer",
-              ]}
-              loop={true}
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-          </span>
-        </h3>
-      </div>
-      <div className="flex gap-8 mt-5 z-10">
-        <a href="https://github.com/kamranalig" target="_blank">
-          <FaGithub size={30} className="text-gray-700 hover:text-gray-900" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/kamran-ali-2318b0207/"
-          target="_blank"
-        >
-          <FaLinkedin size={30} className="text-gray-700 hover:text-gray-900" />
-        </a>
-        <a
-          href="https://wa.me/+923095543952"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp size={30} className="text-gray-700 hover:text-gray-900" />
-        </a>
-        <a
-          href="https://instagram.com/kamranali3573"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram
-            size={30}
-            className="text-gray-700 hover:text-gray-900"
+      <div className="text-center px-6 py-12 md:py-24">
+        <img
+          src="./me1.png"
+          alt="Kamran Ali"
+          className="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg mx-auto mb-6"
+        />
+        <h1 className="text-3xl md:text-5xl font-bold mb-3">Kamran Ali</h1>
+        <h2 className="text-xl md:text-3xl font-semibold mb-6">
+          <Typewriter
+            options={{
+              strings: [
+                "Frontend Developer",
+                "Backend Developer",
+                "Full Stack Developer",
+                "UI/UX Designer",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
           />
-        </a>
-        <FaTwitter size={30} className="text-gray-700 hover:text-gray-900" />
-        <a
-          href="https://www.facebook.com/profile.php?id=100081274886195&mibextid=ZbWKwL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook size={30} className="text-gray-700 hover:text-gray-900" />
+        </h2>
+        <div className="flex justify-center gap-4 mb-6">
+          <a
+            href="#"
+            className="text-gray-300 hover:text-blue-200 transition-colors duration-300"
+          >
+            <FaFacebook size={24} />
+          </a>
+          <a
+            href="#"
+            className="text-gray-300 hover:text-blue-200 transition-colors duration-300"
+          >
+            <FaTwitter size={24} />
+          </a>
+          <a
+            href="#"
+            className="text-gray-300 hover:text-blue-200 transition-colors duration-300"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="#"
+            className="text-gray-300 hover:text-blue-200 transition-colors duration-300"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        </div>
+        <a href="#contact">
+          <button className="bg-blue-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300">
+            Hire Me
+          </button>
         </a>
       </div>
     </div>
   );
 };
 
-export default Header;
+export default Hero;
