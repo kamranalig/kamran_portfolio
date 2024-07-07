@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/about";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Navbar from "./components/navbar/index";
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <About />
       <Services />
+      <Contact />
       <Footer />
     </>
   );

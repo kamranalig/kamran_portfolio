@@ -38,6 +38,16 @@ const Navbar = () => {
         >
           Services
         </Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active-link"
+          className="cursor-pointer hover:text-blue-500"
+        >
+          Contact
+        </Link>
       </div>
     </div>
   );
