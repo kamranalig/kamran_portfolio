@@ -39,6 +39,16 @@ const Navbar = () => {
           Services
         </Link>
         <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active-link"
+          className="cursor-pointer hover:text-blue-500"
+        >
+          Projects
+        </Link>
+        <Link
           to="contact"
           spy={true}
           smooth={true}

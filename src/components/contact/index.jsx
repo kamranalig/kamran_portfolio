@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Contact.css";
 const Contact = () => {
   return (
     <div id="contact" className="max-w-[1160px] mx-auto py-14 px-4">
