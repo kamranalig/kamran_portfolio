@@ -4,8 +4,6 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -45,6 +43,16 @@ const Navbar = () => {
           className="cursor-pointer hover:text-blue-700"
         >
           Services
+        </Link>
+        <Link
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={500}
+          activeClass="active-link"
+          className="cursor-pointer hover:text-blue-700"
+        >
+          Experiences
         </Link>
         <Link
           to="projects"

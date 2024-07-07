@@ -2,13 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-gray-100 py-14">
+    <div id="contact" className=" py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-blue-500 mb-8 text-center">
-          Get in Touch
-        </h2>
+        <h2 className="text-3xl font-bold text-blue-500 mb-8">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col">
             <p className="text-xl font-medium text-[#454360] mb-4">
               Feel free to drop us a line to contact us!
             </p>
