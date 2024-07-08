@@ -4,30 +4,30 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Software Developer Intern",
-      company: "ABC Tech Solutions",
-      location: "New York, NY",
-      date: "June 2022 - August 2022",
+      title: "Front-End Developer",
+      company: "ScryptHub",
+      location: "Lahore, Pakistan",
+      date: "July 2023 - July 2024",
       description:
-        "Worked on front-end development projects using React.js and styled-components.",
+        "Worked extensively with React JS to create responsive web interfaces using React.js, Next.js and JavaScript, while handling API integration. Enhanced front-end skills and gained backend experience with Express, Node, and MongoDB. Collaborated with design teams to ensure seamless user experiences and implemented efficient, maintainable code.",
     },
     {
       id: 2,
-      title: "Frontend Developer",
-      company: "XYZ Web Solutions",
-      location: "Los Angeles, CA",
-      date: "January 2021 - May 2022",
+      title: "MERN Internee",
+      company: "Excellence Delivered (ExD) Pvt Ltd",
+      location: "Lahore, Pakistan",
+      date: "MAR  2023 - JUN  2023",
       description:
-        "Designed and developed user interfaces for web applications using React.js, HTML, and CSS.",
+        "During my internship, I worked with React.js, Express, Node, and MongoDB, creating visually appealing and responsive web interfaces using React.js. This experience strengthened my front-end development skills and provided a solid foundation in React JS",
     },
     {
       id: 3,
-      title: "Full Stack Developer",
-      company: "Tech Innovators",
-      location: "San Francisco, CA",
-      date: "June 2020 - December 2020",
+      title: "Front-end Internee",
+      company: "UNIAL SOLUTIONS (PVT LTD)",
+      location: "Faisalabad, Pakistan",
+      date: "SEP  2022 - NOV  2022",
       description:
-        "Led a team to build scalable web applications using Node.js, Express.js, and MongoDB.",
+        "During my internship at Unial Solution Pvt Ltd, I focused on React JS, enhancing my skills in building dynamic web applications with components, state management, and hooks. This experience significantly strengthened my front-end development abilities and provided a solid foundation in React JS. ",
     },
   ];
 
