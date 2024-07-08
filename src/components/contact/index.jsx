@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FaSpinner } from "react-icons/fa";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -7,6 +8,7 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const form = useRef();
 
   const validateEmail = (email) => {
@@ -31,6 +33,8 @@ const Contact = () => {
       return;
     }
 
+    setLoading(true);
+
     emailjs
       .sendForm(
         "service_i5no78z",
@@ -47,9 +51,11 @@ const Contact = () => {
           setSubject("");
           setMessage("");
           setErrors({});
+          setLoading(false);
         },
         (error) => {
           console.log(error.text);
+          setLoading(false);
         }
       );
   };
@@ -142,9 +148,21 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-blue-500 text-white rounded-md py-3 px-6 hover:bg-blue-600 transition-colors duration-300"
+                className={`bg-blue-500 text-white rounded-md py-3 px-6 transition-colors duration-300 ${
+                  loading
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "hover:bg-blue-600"
+                }`}
+                disabled={loading}
               >
-                Send Message
+                {loading ? (
+                  <div className="flex items-center justify-center">
+                    <FaSpinner className="animate-spin h-5 w-5 mr-3" />
+                    Sending...
+                  </div>
+                ) : (
+                  "Send Message"
+                )}
               </button>
             </div>
           </form>
